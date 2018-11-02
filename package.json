@@ -1,0 +1,23 @@
+{
+  "name": "logsdb",
+  "version": "1.0.0",
+  "description": "reporting tool",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "logsdb"
+  },
+  "keywords": [
+    "logs"
+  ],
+  "author": "bernestalberto\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[o",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.6.0",
+    "sequelize": "^4.41.0",
+    "supervisor": "^0.11.0"
+  }
+}
