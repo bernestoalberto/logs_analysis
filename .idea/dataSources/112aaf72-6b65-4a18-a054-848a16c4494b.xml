@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="news@eabonet.com">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.11">
+    <root id="1">
+      <ServerVersion>9.6.10</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="news">
+      <ObjectId>16457</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>105</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12407</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>105</IntrospectionStateNumber>
+    </database>
+    <database id="4" parent="1" name="test">
+      <ObjectId>16386</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="5" parent="1" name="ebonet">
+      <ObjectId>16384</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="6" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pi">
+      <ObjectId>16385</ObjectId>
+      <Inherit>1</Inherit>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="9" parent="2" name="information_schema">
+      <ObjectId>12119</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="10" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="11" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="12" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="13" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="14" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <Owner>postgres</Owner>
+      <IntrospectionTimestamp>2018-11-01.15:57:44.232</IntrospectionTimestamp>
+      <IntrospectionStateNumber>646</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="15" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="16" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="17" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="18" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="19" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <sequence id="21" parent="14" name="articles_id_seq">
+      <ObjectId>16465</ObjectId>
+      <Owner>ebonet</Owner>
+      <StateNumber>621</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="22" parent="14" name="authors_id_seq">
+      <ObjectId>16473</ObjectId>
+      <Owner>ebonet</Owner>
+      <StateNumber>626</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="23" parent="14" name="log_id_seq">
+      <ObjectId>16482</ObjectId>
+      <Owner>ebonet</Owner>
+      <StateNumber>631</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="24" parent="14" name="articles">
+      <ObjectId>16458</ObjectId>
+      <Owner>ebonet</Owner>
+      <StateNumber>646</StateNumber>
+    </table>
+    <table id="25" parent="14" name="authors">
+      <ObjectId>16467</ObjectId>
+      <Owner>ebonet</Owner>
+      <StateNumber>646</StateNumber>
+    </table>
+    <table id="26" parent="14" name="log">
+      <ObjectId>16475</ObjectId>
+      <Owner>ebonet</Owner>
+      <StateNumber>629</StateNumber>
+    </table>
+    <column id="27" parent="24" name="author">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>618</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="28" parent="24" name="title">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>618</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="29" parent="24" name="slug">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>618</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="30" parent="24" name="lead">
+      <Position>4</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>618</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="31" parent="24" name="body">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>618</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="32" parent="24" name="time">
+      <Position>6</Position>
+      <DataType>timestamp with time zone|0s</DataType>
+      <StateNumber>618</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="33" parent="24" name="id">
+      <Position>7</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>633</StateNumber>
+      <DefaultExpression>nextval(&apos;articles_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>articles_id_seq</SequenceName>
+    </column>
+    <index id="34" parent="24" name="articles_slug_key">
+      <ObjectId>16489</ObjectId>
+      <ColNames>slug</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="35" parent="24" name="articles_pkey">
+      <ObjectId>16487</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="36" parent="24" name="articles_pkey">
+      <ObjectId>16488</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>articles_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="37" parent="24" name="articles_slug_key">
+      <ObjectId>16490</ObjectId>
+      <ColNames>slug</ColNames>
+      <UnderlyingIndexName>articles_slug_key</UnderlyingIndexName>
+    </key>
+    <foreign-key id="38" parent="24" name="articles_author_fkey">
+      <ObjectId>16495</ObjectId>
+      <ColNames>author</ColNames>
+      <RefTableId>16467</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>authors</RefTableName>
+      <RefKeyName>authors_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="39" parent="25" name="name">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>623</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="40" parent="25" name="bio">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>623</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="41" parent="25" name="id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>634</StateNumber>
+      <DefaultExpression>nextval(&apos;authors_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>authors_id_seq</SequenceName>
+    </column>
+    <index id="42" parent="25" name="authors_pkey">
+      <ObjectId>16491</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="43" parent="25" name="authors_pkey">
+      <ObjectId>16492</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>authors_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="26" name="path">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>628</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="45" parent="26" name="ip">
+      <Position>2</Position>
+      <DataType>inet|0s</DataType>
+      <StateNumber>628</StateNumber>
+      <TypeId>869</TypeId>
+    </column>
+    <column id="46" parent="26" name="method">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>628</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="47" parent="26" name="status">
+      <Position>4</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>628</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="48" parent="26" name="time">
+      <Position>5</Position>
+      <DataType>timestamp with time zone|0s</DataType>
+      <StateNumber>628</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="49" parent="26" name="id">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>635</StateNumber>
+      <DefaultExpression>nextval(&apos;log_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>log_id_seq</SequenceName>
+    </column>
+    <index id="50" parent="26" name="log_pkey">
+      <ObjectId>16493</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="51" parent="26" name="log_pkey">
+      <ObjectId>16494</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>log_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

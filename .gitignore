@@ -1,0 +1,7 @@
+.vscode
+.eslintrc.json
+node_modules
+package-lock.json
+sql
+config
+"./idea" 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="news@eabonet.com" uuid="112aaf72-6b65-4a18-a054-848a16c4494b">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://eabonet.com:5432/news</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="news@localhost" uuid="b133b5a5-b110-4317-832c-9bf370594b85">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/news</jdbc-url>
+    </data-source>
+  </component>
+</project>
