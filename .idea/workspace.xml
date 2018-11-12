@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abff3f93-1b61-402f-8bc1-96fe0b0e10ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databaseHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/databaseHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b133b5a5-b110-4317-832c-9bf370594b85.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b133b5a5-b110-4317-832c-9bf370594b85.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b133b5a5-b110-4317-832c-9bf370594b85/storage_v2/_src_/database/news.04ozAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b133b5a5-b110-4317-832c-9bf370594b85/storage_v2/_src_/database/news.04ozAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,38 +23,83 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="news: database" type="6d9b600a:PostgresImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="news: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="news: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="news: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="news: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="log: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="news: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="routines" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b133b5a5-b110-4317-832c-9bf370594b85/console.sql">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="119">
-                    <caret line="7" column="64" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="214" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-606256993">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.103" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.44" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -67,9 +111,10 @@
           <entry key="dumpwsql" value="1" />
           <entry key="js" value="9" />
           <entry key="json" value="3" />
-          <entry key="log" value="11" />
+          <entry key="log" value="12" />
           <entry key="log_id_seq" value="3" />
-          <entry key="sql" value="27" />
+          <entry key="php" value="3" />
+          <entry key="sql" value="41" />
           <entry key="ts" value="3" />
         </counts>
       </usages-collector>
@@ -78,17 +123,19 @@
           <entry key="Database Element" value="24" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="9" />
+          <entry key="PHP" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="SQL" value="19" />
-          <entry key="Scratch" value="17" />
+          <entry key="SQL" value="31" />
+          <entry key="Scratch" value="19" />
           <entry key="TypeScript" value="3" />
+          <entry key="UML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="830" />
           <entry key="json" value="89" />
-          <entry key="sql" value="1586" />
+          <entry key="sql" value="3543" />
           <entry key="txt" value="32" />
         </counts>
       </usages-collector>
@@ -98,8 +145,8 @@
           <entry key="JSON" value="89" />
           <entry key="JavaScript" value="815" />
           <entry key="PLAIN_TEXT" value="32" />
-          <entry key="SQL" value="84" />
-          <entry key="Scratch" value="1510" />
+          <entry key="SQL" value="450" />
+          <entry key="Scratch" value="3101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class" />
@@ -120,10 +167,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/databaseHandler.js">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b133b5a5-b110-4317-832c-9bf370594b85/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="19" column="80" lean-forward="true" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+            <state relative-caret-position="287">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -155,8 +202,11 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/112aaf72-6b65-4a18-a054-848a16c4494b/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bd85e062-70e8-4cb8-aa8b-c99a54ea08d3/console.sql" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b133b5a5-b110-4317-832c-9bf370594b85/console.sql" />
         <option value="$PROJECT_DIR$/databaseHandler.js" />
+        <option value="/1ff1e99b/b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/routine/sum@(integer).sql" />
+        <option value="/1ff1e99b/b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/routine/porcentage@().sql" />
+        <option value="/1ff1e99b/b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/routine/test@().sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b133b5a5-b110-4317-832c-9bf370594b85/console.sql" />
       </list>
     </option>
   </component>
@@ -174,7 +224,6 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers />
   </component>
@@ -196,9 +245,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541454986995" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BBLTools/RestApi/server.js" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542060052943" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ether" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="database.main" />
@@ -242,12 +291,18 @@
       <workItem from="1541187527400" duration="2474000" />
       <workItem from="1541190165017" duration="168000" />
       <workItem from="1541430755052" duration="6996000" />
-      <workItem from="1541443112775" duration="11288000" />
+      <workItem from="1541443112775" duration="12016000" />
+      <workItem from="1541455913424" duration="843000" />
+      <workItem from="1541608632941" duration="497000" />
+      <workItem from="1541701350596" duration="724000" />
+      <workItem from="1541704912707" duration="8089000" />
+      <workItem from="1541713698233" duration="29000" />
+      <workItem from="1542054245606" duration="6214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31517000" />
+    <option name="totallyTimeSpent" value="48641000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -262,7 +317,7 @@
     <frame x="-1608" y="-8" width="1616" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25321338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -271,16 +326,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35704875" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4677207" />
       <window_info anchor="bottom" x="-3200" y="23" width="1600" height="877" id="Debug" order="3" type="WINDOWED" weight="0.627141" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32938075" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.82608694" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32806325" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="7" visible="true" weight="0.4176548" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32806325" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.6100132" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.02108037" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32806325" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.32806325" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -290,11 +345,11 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.27377892" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.27377892" />
       <window_info anchor="right" id="Maven Projects" order="8" show_stripe_button="false" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25321338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -303,26 +358,27 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4677207" />
+      <window_info anchor="bottom" x="-3200" y="23" width="1600" height="877" id="Debug" order="3" type="WINDOWED" weight="0.627141" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32806325" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32806325" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="7" visible="true" weight="0.4176548" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32806325" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.02108037" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32806325" />
+      <window_info anchor="bottom" id="TypeScript" order="13" weight="0.32806325" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" visible="true" weight="0.27377892" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="8" show_stripe_button="false" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,22 +482,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/sequence/authors_id_seq">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/sequence/log_id_seq">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/sequence/articles_id_seq">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/table/authors">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/sequence/authors_id_seq" />
+    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/sequence/log_id_seq" />
+    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/sequence/articles_id_seq" />
+    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/table/authors" />
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -449,13 +493,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/table/articles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/table/articles" />
     <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
@@ -463,26 +501,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/table/log">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+    <entry file="das://b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/table/log" />
+    <entry file="uml://DATABASE/b133b5a5-b110-4317-832c-9bf370594b85.TABLE:news.public.log">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <filtering enabled="true" text=" path Like '%candidate-is-jerk%'">
-            <filter text="path Like '%candidate-is-jerk%'" />
-          </filtering>
+          <ID>DATABASE</ID>
+          <OriginalElement>b133b5a5-b110-4317-832c-9bf370594b85.TABLE:news.public.log</OriginalElement>
+          <nodes>
+            <node x="" y="">b133b5a5-b110-4317-832c-9bf370594b85.TABLE:news.public.log</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="110.0" y="81.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b133b5a5-b110-4317-832c-9bf370594b85/console.sql">
+    <entry file="file://$PROJECT_DIR$/../acs_workhorse/app/Test.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../acs_workhorse/app/Http/Controllers/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="214" />
+        <state relative-caret-position="-1275" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../acs_workhorse/public/imports/reports.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="97" column="105" selection-start-line="97" selection-start-column="105" selection-end-line="97" selection-end-column="115" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/databaseHandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="19" column="80" lean-forward="true" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///1ff1e99b/b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/routine/sum@(integer).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="89" selection-start-column="89" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///1ff1e99b/b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/routine/porcentage@().sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///1ff1e99b/b133b5a5-b110-4317-832c-9bf370594b85/database/news/schema/public/routine/test@().sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="2" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b133b5a5-b110-4317-832c-9bf370594b85/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
         </state>
       </provider>
     </entry>

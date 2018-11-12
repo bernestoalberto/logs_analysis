@@ -93,8 +93,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2018-11-05.10:40:53.583</IntrospectionTimestamp>
-      <IntrospectionStateNumber>632</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-11-12.17:07:52.005</IntrospectionTimestamp>
+      <IntrospectionStateNumber>664</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -182,47 +182,85 @@
       <Owner>postgres</Owner>
       <StateNumber>614</StateNumber>
     </table>
-    <column id="31" parent="28" name="author">
+    <routine id="31" parent="18" name="porcentage">
+      <ObjectId>24695</ObjectId>
+      <Owner>postgres</Owner>
+      <SourceTextLength>358</SourceTextLength>
+      <StateNumber>651</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <ResultsDefinition>TABLE(value timestamp without time zone, views double precision)</ResultsDefinition>
+      <LanguageName>plpgsql</LanguageName>
+      <RoutineKind>function</RoutineKind>
+      <ReturnsSet>1</ReturnsSet>
+      <Cost>100.0</Cost>
+      <Rows>1000.0</Rows>
+    </routine>
+    <routine id="32" parent="18" name="sum">
+      <ObjectId>16500</ObjectId>
+      <Owner>postgres</Owner>
+      <SourceTextLength>75</SourceTextLength>
+      <StateNumber>640</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <ArgumentsDefinition>adder integer</ArgumentsDefinition>
+      <ResultsDefinition>integer</ResultsDefinition>
+      <LanguageName>plpgsql</LanguageName>
+      <RoutineKind>function</RoutineKind>
+      <Cost>100.0</Cost>
+    </routine>
+    <routine id="33" parent="18" name="test">
+      <ObjectId>24702</ObjectId>
+      <Owner>postgres</Owner>
+      <SourceTextLength>409</SourceTextLength>
+      <StateNumber>664</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <ResultsDefinition>TABLE(view timestamp without time zone, percentage double precision)</ResultsDefinition>
+      <LanguageName>plpgsql</LanguageName>
+      <RoutineKind>function</RoutineKind>
+      <ReturnsSet>1</ReturnsSet>
+      <Cost>100.0</Cost>
+      <Rows>1000.0</Rows>
+    </routine>
+    <column id="34" parent="28" name="author">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>604</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="32" parent="28" name="title">
+    <column id="35" parent="28" name="title">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>604</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="33" parent="28" name="slug">
+    <column id="36" parent="28" name="slug">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>604</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="34" parent="28" name="lead">
+    <column id="37" parent="28" name="lead">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <StateNumber>604</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="35" parent="28" name="body">
+    <column id="38" parent="28" name="body">
       <Position>5</Position>
       <DataType>text|0s</DataType>
       <StateNumber>604</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="36" parent="28" name="time">
+    <column id="39" parent="28" name="time">
       <Position>6</Position>
       <DataType>timestamp with time zone|0s</DataType>
       <StateNumber>604</StateNumber>
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1184</TypeId>
     </column>
-    <column id="37" parent="28" name="id">
+    <column id="40" parent="28" name="id">
       <Position>7</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -231,28 +269,28 @@
       <TypeId>23</TypeId>
       <SequenceName>articles_id_seq</SequenceName>
     </column>
-    <index id="38" parent="28" name="articles_slug_key">
+    <index id="41" parent="28" name="articles_slug_key">
       <ObjectId>16488</ObjectId>
       <ColNames>slug</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="39" parent="28" name="articles_pkey">
+    <index id="42" parent="28" name="articles_pkey">
       <ObjectId>16486</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="40" parent="28" name="articles_pkey">
+    <key id="43" parent="28" name="articles_pkey">
       <ObjectId>16487</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>articles_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="41" parent="28" name="articles_slug_key">
+    <key id="44" parent="28" name="articles_slug_key">
       <ObjectId>16489</ObjectId>
       <ColNames>slug</ColNames>
       <UnderlyingIndexName>articles_slug_key</UnderlyingIndexName>
     </key>
-    <foreign-key id="42" parent="28" name="articles_author_fkey">
+    <foreign-key id="45" parent="28" name="articles_author_fkey">
       <ObjectId>16494</ObjectId>
       <ColNames>author</ColNames>
       <RefTableId>16466</RefTableId>
@@ -261,20 +299,20 @@
       <RefKeyName>authors_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="43" parent="29" name="name">
+    <column id="46" parent="29" name="name">
       <Position>1</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>609</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="44" parent="29" name="bio">
+    <column id="47" parent="29" name="bio">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <StateNumber>609</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="45" parent="29" name="id">
+    <column id="48" parent="29" name="id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -283,49 +321,49 @@
       <TypeId>23</TypeId>
       <SequenceName>authors_id_seq</SequenceName>
     </column>
-    <index id="46" parent="29" name="authors_pkey">
+    <index id="49" parent="29" name="authors_pkey">
       <ObjectId>16490</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="47" parent="29" name="authors_pkey">
+    <key id="50" parent="29" name="authors_pkey">
       <ObjectId>16491</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>authors_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="48" parent="30" name="path">
+    <column id="51" parent="30" name="path">
       <Position>1</Position>
       <DataType>text|0s</DataType>
       <StateNumber>614</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="49" parent="30" name="ip">
+    <column id="52" parent="30" name="ip">
       <Position>2</Position>
       <DataType>inet|0s</DataType>
       <StateNumber>614</StateNumber>
       <TypeId>869</TypeId>
     </column>
-    <column id="50" parent="30" name="method">
+    <column id="53" parent="30" name="method">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <StateNumber>614</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="51" parent="30" name="status">
+    <column id="54" parent="30" name="status">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <StateNumber>614</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="52" parent="30" name="time">
+    <column id="55" parent="30" name="time">
       <Position>5</Position>
       <DataType>timestamp with time zone|0s</DataType>
       <StateNumber>614</StateNumber>
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1184</TypeId>
     </column>
-    <column id="53" parent="30" name="id">
+    <column id="56" parent="30" name="id">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -334,16 +372,32 @@
       <TypeId>23</TypeId>
       <SequenceName>log_id_seq</SequenceName>
     </column>
-    <index id="54" parent="30" name="log_pkey">
+    <index id="57" parent="30" name="log_pkey">
       <ObjectId>16492</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="55" parent="30" name="log_pkey">
+    <key id="58" parent="30" name="log_pkey">
       <ObjectId>16493</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>log_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
+    <argument id="59" parent="31">
+      <ArgumentDirection>T</ArgumentDirection>
+      <DataType>table(value timestamp, views double precision)|0v</DataType>
+    </argument>
+    <argument id="60" parent="32" name="adder">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+    </argument>
+    <argument id="61" parent="32">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>integer|0s</DataType>
+    </argument>
+    <argument id="62" parent="33">
+      <ArgumentDirection>T</ArgumentDirection>
+      <DataType>table(view timestamp, percentage double precision)|0v</DataType>
+    </argument>
   </database-model>
 </dataSource>
