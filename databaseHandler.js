@@ -1,4 +1,4 @@
-
+const fs = require('fs-extra');
 const {Pool} = require('pg');
 const config = require('./config/config.json');
 let connexion = (process.platform == 'win32' || process.platform == 'linux') ? config.local : config.remote;
@@ -35,26 +35,34 @@ let postgresql = {
     },
     consolePrinter: (rows, valor,question)=>{
         let value = (valor  == 1 )? 'article_name': 'autor';
-        console.log(`${question}`);
+        console.log(`${question} \n`);
+        postgresql.log("./logs/output.txt", ` ${question}`);
         for(let current of rows){
-            console.table(`
-             • ${current[value]} - ${current.views} views
-             
-                    `);
+            console.log(` • ${current[value]} - ${current.views} views`);
+            postgresql.log("./logs/output.txt", ` • ${current[value]} - ${current.views} views`);
         }
-        console.log('\n');
+        postgresql.log("./logs/output.txt", ` \n`);
     },
     consoleBoard: (dayErrors, total)=>{
-        console.log(`On which days did more than 1% of requests lead to errors ?`);
+        console.log(`On which days did more than 1% of requests lead to errors ? `);
+        postgresql.log("./logs/output.txt", `On which days did more than 1% of requests lead to errors ? `);
         let i =0;
         for(let current of dayErrors){
             let percent = ( parseInt(current.errors) / parseInt(total[i]['requests'])) * 100;
-            (percent >   1 )?
-                console.log(` • ${dateformat(current.day, 'mmmm d, yyyy')} - ${percent.toFixed(1)} % errors`)
-                : '';
+            if(percent >   1 )
+            {
+                console.log(` • ${dateformat(current.day, 'mmmm d, yyyy')} - ${percent.toFixed(1)} % errors`);
+                postgresql.log("./logs/output.txt", ` • ${dateformat(current.day, 'mmmm d, yyyy')} - ${percent.toFixed(1)} % errors`);
+            }
             i++;
         }
         console.log('\n');
+        postgresql.log("./logs/output.txt", ` \n`);
+    },
+    log : (filename,info)=>{
+        fs.appendFile(filename, `${info} \r\n` , err => {
+            (err) ? console.log(err) :'';// => null
+        });
     },
     topArticleAuthor:()=>{
         pool.connect((err, client, release) => {
@@ -80,8 +88,8 @@ let postgresql = {
                     return console.error('Error executing query', err.stack)
                 }
                 postgresql.consolePrinter(result.rows,2, question);
-                // console.log(result.rows);
-                // console.log('\n');
+
+
             })
         });
     },
@@ -113,7 +121,6 @@ let postgresql = {
 
         });
     }
-
 };
 
 module.exports = postgresql;
