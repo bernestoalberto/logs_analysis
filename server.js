@@ -1,8 +1,10 @@
 const postgreSql  = require('./databaseHandler');
 
 
+postgreSql.topArticleAuthor();
+
 postgreSql.topThreeArticles();
-//postgreSql.choosenOneArticle();
-//postgreSql.topThreeArticles();
+
+postgreSql.buggyDay();
 
 

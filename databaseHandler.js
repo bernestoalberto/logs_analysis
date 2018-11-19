@@ -3,6 +3,7 @@ const {Pool} = require('pg');
 const config = require('./config/config.json');
 let connexion = (process.platform == 'win32' || process.platform == 'linux') ? config.local : config.remote;
 const pool = new Pool(connexion);
+let dateformat = require('dateformat');
 
 let postgresql = {
     topThreeArticles : ()=>{
@@ -16,6 +17,7 @@ let postgresql = {
               "Baltimore Ravens Defeat Rhode Island Shoggoths" — 915 views
               "Political Scandal Ends In Political Scandal" — 553 views
             * */
+            let question = `What are the most  three popular three articles of all times ?`;
             client.query(`select articles.title  article_name, count(articles.slug) as views
                           from articles left join log on log.path  = '/article/' || articles.slug
                           group by article_name, articles.slug
@@ -27,24 +29,39 @@ let postgresql = {
                     }
 
                     // console.log(result.rows);
-                    postgresql.consolePrinter(result.rows);
+                    postgresql.consolePrinter(result.rows,1,question);
                 });
         });
     },
-    consolePrinter: (rows)=>{
+    consolePrinter: (rows, valor,question)=>{
+        let value = (valor  == 1 )? 'article_name': 'autor';
+        console.log(`${question}`);
         for(let current of rows){
             console.table(`
-             ${current.article_name} - ${current.views} views
+             • ${current[value]} - ${current.views} views
              
                     `);
         }
+        console.log('\n');
     },
-    choosenOneArticle:()=>{
+    consoleBoard: (dayErrors, total)=>{
+        console.log(`On which days did more than 1% of requests lead to errors ?`);
+        let i =0;
+        for(let current of dayErrors){
+            let percent = ( parseInt(current.errors) / parseInt(total[i]['requests'])) * 100;
+            (percent >   1 )?
+                console.log(` • ${dateformat(current.day, 'mmmm d, yyyy')} - ${percent.toFixed(1)} % errors`)
+                : '';
+            i++;
+        }
+        console.log('\n');
+    },
+    topArticleAuthor:()=>{
         pool.connect((err, client, release) => {
             if (err) {
                 return console.error('Error acquiring client', err.stack)
             }
-            //top 1 Articles  Author name and views
+            let question = 'What are the most popular article authors of all time ?';
             /*
             * Ursula La Multa — 2304 views
             Rudolf von Treppenwitz — 1985 views
@@ -53,17 +70,22 @@ let postgresql = {
             *
             *
             * */
-            client.query('SELECT * from news.public.articles ', (err, result) => {
+            client.query(`Select authors.name as autor, count(*) as views
+                          from authors
+                                 inner join  articles on authors.id = articles.author
+                                 inner join log on log.path  = '/article/' || articles.slug
+                          GROUP BY autor ORDER BY views desc`, (err, result) => {
                 release();
                 if (err) {
                     return console.error('Error executing query', err.stack)
                 }
-
-                console.log(result.rows)
+                postgresql.consolePrinter(result.rows,2, question);
+                // console.log(result.rows);
+                // console.log('\n');
             })
         });
     },
-    buggyDay :()=>{
+    buggyDay : ()=>{
 
         pool.connect((err, client, release) => {
             if (err) {
@@ -72,14 +94,23 @@ let postgresql = {
             //  On which days did more than 1% of requests lead to errors?
             //HTTP status codes
             //July 29, 2016 — 2.5% errors
-            client.query('SELECT * from news.public.articles ', (err, result) => {
-                release();
-                if (err) {
-                    return console.error('Error executing query', err.stack)
+            client.query(`Select count(*) as requests from log group by DATE(time)`,(bug, totalRows)=>{
+                if (bug) {
+                    return console.error('Error executing query', bug.stack)
                 }
-
-                console.log(result.rows)
+                client.query(`SELECT  date(time) as day,
+                                      count(*) as errors
+                              from log
+                              where status like '%404%'
+                              group by day order by errors desc`, (err, result) => {
+                    release();
+                    if (err) {
+                        return console.error('Error executing query', err.stack)
+                    }
+                    postgresql.consoleBoard(result.rows, totalRows.rows);
+                });
             });
+
         });
     }
 
