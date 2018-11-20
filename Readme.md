@@ -18,7 +18,7 @@ Is a log analysis tool which
 <a href='https://www.postgresql.org/'>PostgresSQL</a> as <a href='https://en.wikipedia.org/wiki/Database#Database_management_system'>DBMS<a>
 ### Project structure
 
-![alt text](https://raw.githubusercontent.com/bernestoalberto/log_analysis/master/assets/structure.png)
+![Project Structure](https://github.com/bernestoalberto/logs_analysis/master/assets/structure.png)
 
 #### server.js
 Is the application entry point
