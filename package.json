@@ -14,7 +14,7 @@
     "logs"
   ],
   "author": "bernestalberto\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[o",
-  "license": "ISC",
+  "license": "GNU/GPL",
   "dependencies": {
     "dateformat": "^3.0.3",
     "fs-extra": "^7.0.1",
