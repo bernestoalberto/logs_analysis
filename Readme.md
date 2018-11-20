@@ -23,7 +23,7 @@ Is a log analysis tool which
 #### server.js
 Is the application entry point
 ```bash
-const postgreSql  = require('./databaseHandler');
+const postgresSql  = require('./databaseHandler');
 
 ```
 
